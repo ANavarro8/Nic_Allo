@@ -1,0 +1,5 @@
+samtools view Nclevelandii_OS_t1x3_vs_Niatt.sorted.rehead.out_orig.bam | htseq-count -a 0 -s no -t exon  - /data/Genomes/NIATT/Annotation/Combine_Au7_Maker/NIATT_combined_annotation.final.function.oldname.gtf  > Nclevelandii_OS_t1x3_vs_Niatt_orig.counts.txt
+
+samtools view Nclevelandii_OS_t1x3_vs_Niatt.sorted.rehead.out_common.bam | htseq-count -a 0 -s no -t exon  - /data/Genomes/NIATT/Annotation/Combine_Au7_Maker/NIATT_combined_annotation.final.function.oldname.gtf  > Nclevelandii_OS_t1x3_vs_Niatt_common.counts.txt
+
+samtools view Nclevelandii_OS_t1x3_vs_Niatt.sorted.rehead.out_other.bam | htseq-count -a 0 -s no -t exon  - /data/Genomes/NIATT/Annotation/Combine_Au7_Maker/NIATT_combined_annotation.final.function.oldname.gtf  > Nclevelandii_OS_t1x3_vs_Niatt_other.counts.txt
